@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>打地鼠</title>
+    <style>
+        body {
+            margin: 0px;
+            background: url(images/bg.jpg) no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+        
+        .message {
+            margin: 100px 0 0 600px;
+        }
+        
+        table {
+            border: 1px solid;
+            margin: 30px 500px;
+        }
+        
+        .s,
+        .count {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="message">
+        <div>剩余时间(s):</div>
+        <div class="s">0</div>
+        <div>打中地鼠的数量</div>
+        <div class="count">0</div>
+        <input type="button" id='btn' value="开始" onclick="start()">
+    </div>
+    <table>
+        <tr>
+            <td><img src="images/00.jpg" onclick="hit(this)"></td>
+            <td><img src="images/00.jpg" onclick="hit(this)"></td>
+            <td><img src="images/00.jpg" onclick="hit(this)"></td>
+            <td><img src="images/00.jpg" onclick="hit(this)"></td>
+            <td><img src="images/00.jpg" onclick="hit(this)"></td>
+        </tr>
+        <tr>
+            <td><img src="images/00.jpg" onclick="hit(this)"></td>
+            <td><img src="images/00.jpg" onclick="hit(this)"></td>
+            <td><img src="images/00.jpg" onclick="hit(this)"></td>
+            <td><img src="images/00.jpg" onclick="hit(this)"></td>
+            <td><img src="images/00.jpg" onclick="hit(this)"></td>
+        </tr>
+        <tr>
+            <td><img src="images/00.jpg" onclick="hit(this)"></td>
+            <td><img src="images/00.jpg" onclick="hit(this)"></td>
+            <td><img src="images/00.jpg" onclick="hit(this)"></td>
+            <td><img src="images/00.jpg" onclick="hit(this)"></td>
+            <td><img src="images/00.jpg" onclick="hit(this)"></td>
+        </tr>
+        <tr>
+            <td><img src="images/00.jpg" onclick="hit(this)"></td>
+            <td><img src="images/00.jpg" onclick="hit(this)"></td>
+            <td><img src="images/00.jpg" onclick="hit(this)"></td>
+            <td><img src="images/00.jpg" onclick="hit(this)"></td>
+            <td><img src="images/00.jpg" onclick="hit(this)"></td>
+        </tr>
+        <tr>
+            <td><img src="images/00.jpg" onclick="hit(this)"></td>
+            <td><img src="images/00.jpg" onclick="hit(this)"></td>
+            <td><img src="images/00.jpg" onclick="hit(this)"></td>
+            <td><img src="images/00.jpg" onclick="hit(this)"></td>
+            <td><img src="images/00.jpg" onclick="hit(this)"></td>
+        </tr>
+    </table>
+    <script>
+        //获得所有的img对象,返回的是伪数组
+        var images = document.querySelectorAll('img');
+        var input = document.querySelector('input');
+        var s = document.querySelector('.s');
+        var counts = document.querySelector('.count');
+        var chImg;
+        var mouseBK;
+        var cutTime;
+        // 游戏时间
+        var gameTime;
+        var count = 0; //打中地鼠个数
+        // 开始游戏方法
+        function start() {
+            clearGame(); // 清除定时器，用来解决多次点击开始按钮导致的游戏bug(启动多个计时器)
+            gameTime = 3; //游戏时间
+            chImg = window.setInterval('changeImg()', 1000); // 1s调用一次，
+            cutTime = window.setInterval('counterTime()', 1000);
+            // document.querySelector('#btn').disabled = true; // 让开始按钮禁用，用来解决多次点击开始按钮导致的游戏bug(启动多个计时器)
+        }
+
+        function changeImg() { // 每隔1s，随机切换表格中某个格子的背景
+            // 获得一个随机的数组的索引下表 images.length 伪数组长度
+            var index = Math.floor(Math.random() * images.length);
+            var img = images[index];
+            img.src = "images/01.jpg";
+            mouseBK = window.setTimeout('mouseBack(' + index + ')', 1000);
+        }
+
+        function mouseBack(index) { // 让随机出现的地鼠图片还原为初始图片状态
+            var img = images[index];
+            img.src = "images/00.jpg";
+        }
+
+        function hit(img) { //当使用鼠标点击图片资源时，将图片切换为挨打的老鼠的资源
+            var name = img.src;
+            var subName = name.substring(name.length - 6); // 获取图片地址的后6位字符
+            if (subName == '01.jpg') { // 如果当前的img对象是01.jpg是切换
+                img.src = "images/02.jpg";
+                count++;
+            }
+
+        }
+
+        function counterTime() { // 计时的方法  游戏启动后，每隔1s后执行
+            gameTime--; //更新游戏剩余时间
+            s.innerHTML = gameTime; // 获取时间，gameTime的值赋值给类名为s的div里
+            counts.innerHTML = count; // 获取当前打中地鼠的数量
+            if (gameTime == 0) //游戏结束
+                gameOver();
+
+
+        }
+        // 游戏结束
+        function gameOver() {
+            alert('游戏结束！恭喜您击中地鼠的数量为' + count + "个!");
+            clearGame(); //停掉计时器
+        }
+
+        function clearGame() { //停掉计时器 
+            for (var i in images) { // 使图片恢复到初始图片
+                images[i].src = "images/00.jpg";
+
+            }
+            window.clearInterval(chImg);
+            window.clearInterval(cutTime);
+            window.clearInterval(mouseBK);
+            count = 0;
+        }
+    </script>
+</body>
+
+</html>;
