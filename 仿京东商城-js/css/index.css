@@ -331,7 +331,7 @@
 }
 
 
-/*我们鼠标经过图片 往右走 8px*/
+/*鼠标经过图片 往右走 8px*/
 
 .box-bd img:hover {
     margin-left: 8px;
