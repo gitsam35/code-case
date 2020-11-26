@@ -76,7 +76,6 @@
         </tr>
     </table>
     <script>
-        //获得所有的img对象,返回的是伪数组
         var images = document.querySelectorAll('img');
         var input = document.querySelector('input');
         var s = document.querySelector('.s');
@@ -84,13 +83,12 @@
         var chImg;
         var mouseBK;
         var cutTime;
-        // 游戏时间
         var gameTime;
         var count = 0; //打中地鼠个数
         // 开始游戏方法
         function start() {
             clearGame(); // 清除定时器，用来解决多次点击开始按钮导致的游戏bug(启动多个计时器)
-            gameTime = 3; //游戏时间
+            gameTime = 30; //游戏时间
             chImg = window.setInterval('changeImg()', 1000); // 1s调用一次，
             cutTime = window.setInterval('counterTime()', 1000);
             // document.querySelector('#btn').disabled = true; // 让开始按钮禁用，用来解决多次点击开始按钮导致的游戏bug(启动多个计时器)
@@ -112,9 +110,9 @@
         function hit(img) { //当使用鼠标点击图片资源时，将图片切换为挨打的老鼠的资源
             var name = img.src;
             var subName = name.substring(name.length - 6); // 获取图片地址的后6位字符
-            if (subName == '01.jpg') { // 如果当前的img对象是01.jpg是切换
+            if (subName == '01.jpg') { // 如果后6位字符01.jpg，把图片地址改为打中地鼠的图片地址
                 img.src = "images/02.jpg";
-                count++;
+                count++; // 统计打中地鼠的数量
             }
 
         }
