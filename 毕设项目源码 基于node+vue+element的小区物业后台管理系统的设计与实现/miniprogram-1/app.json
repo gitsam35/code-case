@@ -1,0 +1,55 @@
+{
+    "pages": [
+        
+        "pages/login/index",
+        "pages/index/index",
+         "pages/user/index",
+         "pages/user_detail/index",
+         "pages/repair/index",
+       "pages/repair_detail/index",
+        "pages/announcement/index",
+        "pages/registered/index",
+        "pages/announcementList_detail/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#2c8cfc",
+        "navigationBarTitleText": "星豪物业",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "",
+        "selectedColor": "#2c8cfc",
+        "backgroundColor": "#fafafa",
+        "position": "bottom",
+        "borderStyle": "black",
+        "list": [{
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "icons/home.png",
+                "selectedIconPath": "icons/home1.png"
+            },
+            {
+                "pagePath": "pages/repair/index",
+                "text": "报修",
+                "iconPath": "icons/Set.png",
+                "selectedIconPath": "icons/Set1.png"
+            }, {
+                "pagePath": "pages/announcement/index",
+                "text": "公告",
+                "iconPath": "icons/notification.png",
+                "selectedIconPath": "icons/notification1.png"
+            }, {
+                "pagePath": "pages/user/index",
+                "text": "我的",
+                "iconPath": "icons/user.png",
+                "selectedIconPath": "icons/user1.png"
+            }
+        ]
+    },
+
+
+
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

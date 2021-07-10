@@ -1,0 +1,43 @@
+
+<view class="user">
+      <view class="bg" wx:if="{{userLogin.nickName}}">
+        <image bindtap="bindViewTap" class="user_icon" src="{{userLogin.avatarUrl}}" mode="cover"></image>
+        <text class="user_name">{{userLogin.nickName}}</text>
+    </view>
+    <view class="btn" wx:else>
+        <view> <navigator url="/pages/login/index" open-type="navigate">
+            <button >登录</button>
+        </navigator></view>
+    </view>
+  
+   
+</view>
+<view class="usermain">
+    <navigator url="/pages/announcement/index" open-type='switchTab'>
+        <view class="list">
+            <view class="iconfont icon-notification-copy"></view>
+            <view class="title">公告信息</view>
+            <view class="iconfont icon-kuohao"></view>
+        </view>
+    </navigator>
+   
+    <navigator url="/pages/repair/index" open-type='switchTab'>
+        <view class="list">
+            <view class="iconfont icon-shezhi-copy"></view>
+            <view class="title">申请报修</view>
+            <view class="iconfont icon-kuohao"></view>
+        </view>
+    </navigator>
+    <navigator url="/pages/repair_detail/index" open-type='navigate'>
+        <view class="list">
+            <view class="iconfont icon-xinxi"></view>
+            <view class="title">报修详情</view>
+            <view class="iconfont icon-kuohao"></view>
+        </view>
+    </navigator>
+    <view class="list">
+    <view class="iconfont icon-dianhua"></view>
+    <view class="title">物业电话:</view>
+  <view class="phone">13977948134</view>  
+</view>
+</view>

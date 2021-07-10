@@ -1,0 +1,44 @@
+
+<view class="index_swiper">
+  <swiper autoplay indicator-dots circular indicator-active-color="#2c8cfc">
+    <swiper-item wx:for="{{swiperList}}" wx:key="_id">
+      <navigator url="{{item.picture}}">
+        <image mode="widthFix" src="{{item.picture}}"></image>
+      </navigator>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="index_main">
+  <view class="box1">
+  <navigator url="/pages/repair/index" open-type='switchTab'>
+    <view class="list">
+      <view class="title">申请报修</view>
+      <view class="iconfont icon-shezhi1"></view>
+    </view>
+  </navigator>
+  <navigator url="/pages/repair_detail/index" open-type='navigate'>
+    <view class="list">
+      <view class="title">报修详情</view>
+      <view class="iconfont icon-xinxi1"></view>
+    </view>
+  </navigator>
+  </view>
+  <view class="box2">
+  <navigator url="/pages/announcement/index" open-type='switchTab'>
+    <view class="list">
+      <view class="title">公告信息</view>
+      <view class="iconfont icon-xinxi2"></view>
+    </view>
+  </navigator>
+
+    <view class="list">
+      <view class="title">更多信息</view>
+      <view class="iconfont icon-duosefuzhu-gengduotiaojian"></view>
+    </view>
+
+</view>
+<view class="copyright">
+  <view>本系统由广西星豪物业提供技术支持</view> 
+  Copyright 2017-2021 广西星豪物业版权所有
+</view>
+</view>

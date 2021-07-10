@@ -1,0 +1,153 @@
+@font-face {
+    font-family: "iconfont";
+    /* Project id 2568781 */
+    src: url('//at.alicdn.com/t/font_2568781_fq5f64srqsr.woff2?t=1622663088597') format('woff2'), url('//at.alicdn.com/t/font_2568781_fq5f64srqsr.woff?t=1622663088597') format('woff'), url('//at.alicdn.com/t/font_2568781_fq5f64srqsr.ttf?t=1622663088597') format('truetype');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shezhi1:before {
+    content: "\e651";
+}
+
+.icon-xinxi2:before {
+    content: "\e604";
+}
+
+.icon-xinxi1:before {
+    content: "\e7a2";
+}
+
+.icon-duosefuzhu-gengduotiaojian:before {
+    content: "\e610";
+}
+
+.icon-xinxi:before {
+    content: "\e8ac";
+}
+
+.icon-yuandian:before {
+    content: "\e602";
+}
+
+.icon-yuandian-copy:before {
+    content: "\e601";
+}
+
+.icon-kuohao:before {
+    content: "\e632";
+}
+
+.icon-dianhua:before {
+    content: "\e60e";
+}
+
+.icon-chezibai:before {
+    content: "\e608";
+}
+
+.icon-riversideVillages:before {
+    content: "\e600";
+}
+
+.icon-gongneng:before {
+    content: "\e84a";
+}
+
+.icon-gongneng-copy:before {
+    content: "\e84b";
+}
+
+.icon-gongneng-copy1:before {
+    content: "\e84c";
+}
+
+.icon-gongneng-copy-copy:before {
+    content: "\e84d";
+}
+
+.icon-gongnengguanli:before {
+    content: "\e605";
+}
+
+.icon-gongnengguanli-copy:before {
+    content: "\e6b8";
+}
+
+.icon-zhangdanfeiyongmingxi:before {
+    content: "\e6b4";
+}
+
+.icon-feiyongguanli:before {
+    content: "\e69b";
+}
+
+.icon-feiyong:before {
+    content: "\e672";
+}
+
+.icon-feiyong-copy:before {
+    content: "\e6b5";
+}
+
+.icon-feiyongguanli-copy:before {
+    content: "\e6b6";
+}
+
+.icon-zhangdanfeiyongmingxi-copy:before {
+    content: "\e6b7";
+}
+
+.icon-user:before {
+    content: "\e603";
+}
+
+.icon-loading:before {
+    content: "\e609";
+}
+
+.icon-home:before {
+    content: "\e60b";
+}
+
+.icon-favorite:before {
+    content: "\e60c";
+}
+
+.icon-user-copy:before {
+    content: "\e699";
+}
+
+.icon-home-copy:before {
+    content: "\e69a";
+}
+
+.icon-iconfront-:before {
+    content: "\e60a";
+}
+
+.icon-shezhi:before {
+    content: "\e696";
+}
+
+.icon-shezhi-copy:before {
+    content: "\e697";
+}
+
+.icon-iconfront--copy:before {
+    content: "\e698";
+}
+
+.icon-notification:before {
+    content: "\e606";
+}
+
+.icon-notification-copy:before {
+    content: "\e607";
+}

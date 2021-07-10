@@ -1,0 +1,17 @@
+
+<view class="repairList" wx:for="{{repairList}}" wx:key="id">
+  <view class="repairMain" wx:if="{{item.username==userLogin.username}}">
+    <view class="name">报修人:
+      {{item.name}}</view>
+    <view class="phone">电话号码:
+      {{item.phone}}</view>
+    <view class="phone">微信号:
+      {{item.WeChat}}</view>
+    <view class="address">报修地点:
+      {{item.address}}</view>
+    <view class="content">报修问题:
+      {{item.content}}</view>
+      <view class="repairState">报修状态:
+    {{item.repairState}}</view>
+  </view>
+</view>

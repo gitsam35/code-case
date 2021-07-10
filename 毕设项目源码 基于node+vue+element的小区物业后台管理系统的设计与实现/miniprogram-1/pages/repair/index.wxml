@@ -1,0 +1,31 @@
+<!-- 碧海新城2栋501 13977986721  厕所马桶堵了 -->
+<form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="repair">
+        <view class="iconfont icon-yuandian-copy"></view>
+        <view class="title">报修地点</view>
+    </view>
+    <input type="text" class="input-text" name="address" placeholder="请输入报修地点" />
+    <view class="repair">
+        <view class="iconfont icon-yuandian-copy"></view>
+        <view class="title">报修人</view>
+    </view>
+    <input type="text" class="input-text" name="name" placeholder="请输入报修人" />
+    <view class="repair">
+        <view class="iconfont icon-yuandian-copy"></view>
+        <view class="title">电话号码</view>
+    </view>
+    <input type="text" class="input-text" name="phone" placeholder="请输入联系电话号码" />
+    <view class="repair">
+        <view class="iconfont icon-yuandian-copy"></view>
+        <view class="title">微信号</view>
+    </view>
+    <input type="text" class="input-text" name="WeChat" placeholder="请输入联系微信号" />
+    <view class="repair">
+        <view class="iconfont icon-yuandian-copy"></view>
+        <view class="title">报修问题</view>
+    </view>
+    <input type="text" class="input-text" name="content" placeholder="请输入报修的内容" />
+    <navigator url="/pages/repair_detail/index" open-type="navigate">
+    <button formType="submit">提交报修</button>
+    </navigator>
+</form>

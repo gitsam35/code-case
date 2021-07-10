@@ -1,0 +1,13 @@
+
+  <navigator class="announcementList"
+        wx:for="{{announcementList}}"
+        wx:key="id"
+        url="/pages/announcementList_detail/index?_id={{item._id}}"
+        >
+<view class="announcement">
+<view class="title">{{item.title}}</view>
+<view>点击获取详情</view>
+<view>{{item.time}}</view>
+</view>
+  </navigator>
+     

@@ -1,0 +1,2 @@
+
+<rich-text nodes="{{announcement_detail.content}}"></rich-text>

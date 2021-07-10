@@ -1,0 +1,105 @@
+page {
+    background-color: #edece8;
+}
+
+.btn {
+    background: #2c8cfc;
+    height: 45vh;
+}
+
+.btn button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20%;
+    text-align: center;
+}
+
+.bg {
+    background: #2c8cfc;
+    width: 100%;
+    height: 45vh;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    /* border-radius: 50rpx; */
+    /* border-bottom: 90rpx; */
+}
+
+.user_icon {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    text-align: center;
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 50%;
+}
+
+.user_name {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30%;
+    text-align: center;
+    color: #fff;
+    margin-top: 40rpx;
+    font-size: 40rpx;
+}
+
+.userinfo {
+    margin-bottom: 50rpx;
+}
+
+.usermain {
+    margin-top: 50rpx;
+    border-radius: 30rpx;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    margin: 0rpx 50rpx 0 30rpx;
+    background: #fff;
+    width: 90%;
+    height: 120rpx;
+    text-align: center;
+    font-size: 36rpx;
+    /* border-radius: 30rpx; */
+}
+
+.title {
+    margin-left: 20rpx;
+}
+
+.icon-notification-copy {
+    padding-left: 70rpx;
+    color: #2c8cfc;
+    font-size: 52rpx;
+}
+
+.icon-shezhi-copy {
+    padding-left: 70rpx;
+    color: #f0a534;
+    font-size: 52rpx;
+}
+
+.icon-xinxi {
+    padding-left: 70rpx;
+    color: #fc2c2c;
+    font-size: 52rpx;
+}
+
+.icon-dianhua {
+    padding-left: 70rpx;
+    color: #4ffc2cb0;
+    font-size: 50rpx;
+}
+
+.icon-kuohao {
+    margin-left: 230rpx;
+}
+
+.phone {
+    margin-left: 20rpx;
+}

@@ -1,0 +1,19 @@
+
+<!--登录页面-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="login">
+        <view class="iconfont icon-yuandian-copy"></view>
+        <view class="title">用户名</view>
+    </view>
+    <input type="text" class="input-text" name="username" placeholder="请输入用户名" />
+    <view class="login">
+        <view class="iconfont icon-yuandian-copy"></view>
+        <view class="title">密码</view>
+    </view>
+    <input type="text" class="input-text" name="password" placeholder="请输入密码" />
+     <button formType="submit">登录</button> 
+    </form>
+    <view> <navigator url="/pages/registered/index" open-type="navigate">
+            <button>没有账号,点击注册</button>
+        </navigator>
+        </view>

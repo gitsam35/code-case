@@ -1,0 +1,68 @@
+/* 全局样式表 */
+
+html,
+body,
+#app {
+    /* height: 100%; */
+    margin: 0;
+    padding: 0;
+    /* min-width: 1024px; */
+    /* min-width: 1024px;1024px,不够会有滑条以 1024px 显示 */
+}
+
+.ql-editor {
+    min-height: 300px;
+}
+
+.el-pagination {
+    margin: 20px;
+}
+
+.el-table td,
+.el-table th {
+    /* 列表居中 */
+    text-align: center;
+}
+
+.disabled .el-upload--picture-card {
+    display: none;
+}
+
+.btn .el-button {
+    margin: 20px;
+}
+
+.btn .downloadExcel {
+    display: inline-block;
+}
+
+.search span,
+.search .el-button {
+    margin: 0 20px 0 20px;
+}
+
+
+/* 在src 为空时,去除img的边框 */
+
+img[src=""],
+img:not([src]) {
+    opacity: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* Layout 布局 的样式 */
+
+.el-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

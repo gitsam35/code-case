@@ -1,0 +1,61 @@
+page {
+  background-color: #fff;
+}
+.index_swiper swiper {
+  width: 100%;
+  height: 380rpx;
+}
+.index_swiper swiper image {
+  width: 100%;
+}
+
+.index_main{
+  position: absolute;
+margin: 50rpx 30rpx;
+}
+.box1,.box2{
+  display: flex;
+    align-items: center;
+}
+.list{
+  display: flex;
+    align-items: center;
+  margin: 20rpx ;
+  border-radius: 15%;
+width: 300rpx;
+height: 200rpx;
+background: #2c8cfc;
+color: #fff;
+}
+.title{
+  padding: 0 20rpx 0 50rpx;
+  font-size: 38rpx;
+}
+.icon-xinxi2 {
+  /* padding-left: 70rpx; */
+  color: #f04141;
+  font-size: 52rpx;
+}
+
+.icon-shezhi1 {
+  /* padding-left: 70rpx; */
+  color: #f0a534;
+  font-size: 52rpx;
+}
+
+.icon-xinxi1 {
+  /* padding-left: 70rpx; */
+  color: #fff;
+  font-size: 52rpx;
+}
+.icon-duosefuzhu-gengduotiaojian {
+  /* padding-left: 70rpx; */
+  color: #05ec05;
+  font-size: 52rpx;
+}
+
+.copyright{
+  text-align: center;
+  margin-top: 50rpx;
+  color: rgba(172, 172, 172, 0.979);
+}

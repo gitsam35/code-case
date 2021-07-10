@@ -1,0 +1,19 @@
+<button bindtap="getUserProfile">请点击获取头像昵称进行更新</button>
+   
+<form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="registered">
+        <view class="iconfont icon-yuandian-copy"></view>
+        <view class="title">用户名</view>
+    </view>
+    <input type="text" class="input-text" name="username" placeholder="请输入用户名" />
+    
+    <view class="registered">
+        <view class="iconfont icon-yuandian-copy"></view>
+        <view class="title">电话号码</view>
+    </view>
+    <input type="text" class="input-text" name="phone" placeholder="请输入联系电话号码" />
+    
+    <navigator url="/pages/user/index" open-type="switchTab">
+    <button formType="submit">修改</button>
+    </navigator>
+</form>
