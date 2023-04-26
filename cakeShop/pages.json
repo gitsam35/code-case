@@ -1,0 +1,144 @@
+{
+	"easycom": {
+			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+		},
+	
+	"pages": [ //pages数组中第一项表示应用启动页，
+		{
+		    "path" : "pages/index/index",
+		    "style" : {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom"
+			}
+		}
+		,{
+			"path": "pages/cake/cake",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+		}
+	    ,{
+            "path" : "pages/my/my",
+            "style" : {
+				"navigationBarTitleText": "我的"
+			}
+        }
+        ,
+		{
+            "path" : "pages/index/banner-ad",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/cart/cart",
+            "style" :{
+                "navigationBarTitleText": "购物车",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        
+        
+    ]
+	,
+	"subPackages": [{
+			"root": "pagesA",
+			"pages": [{
+	            "path" : "user/forget-password",
+	            "style" : {}
+	        }
+	        ,{
+	            "path" : "user/login",
+	            "style" : {}
+	        }
+	        ,{
+	            "path" : "user/registration",
+	            "style" : {}
+	        },
+			{
+			    "path" : "order/order",
+			    "style" :                                                                                    
+			    {
+			        "navigationBarTitleText": "",
+			        "enablePullDownRefresh": false
+			    }
+			    
+			},
+			{
+			    "path" : "detail/detail",
+			    "style" : {}
+			},{
+			    "path" : "address/address",
+			    "style" :                                                                                    
+			    {
+			        "navigationBarTitleText": "",
+			        "enablePullDownRefresh": false
+			    }
+			    
+			}
+			,{
+			    "path" : "address/address-detail",
+			    "style" :                                                                                    
+			    {
+			        "navigationBarTitleText": "",
+			        "enablePullDownRefresh": false
+			    }
+			    
+			},
+			{
+			    "path" : "about/about",
+			    "style" :{
+			        "navigationBarTitleText": "",
+			        "enablePullDownRefresh": false
+			    }
+				
+			    
+			}]
+			}],
+				"preloadRule": {
+					"pagesA/user/login": {
+						"network": "all",
+						"packages": ["__APP__"]
+					}
+					},
+
+	
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+		"selectedColor":"#007AFF",
+		"color":"#111111",
+		"list":[
+			{
+				"text":"首页",
+				"pagePath":"pages/index/index",
+				"iconPath":"static/icon/home.png",
+				"selectedIconPath":"static/icon/home-active.png"
+			},
+			{
+				"text":"蛋糕",
+				"pagePath":"pages/cake/cake",
+				"iconPath":"static/icon/news.png",
+				"selectedIconPath":"static/icon/news-active.png"
+			},
+			{
+				"text":"购物车",
+				"pagePath":"pages/cart/cart",
+				"iconPath":"static/icon/cart.png",
+				"selectedIconPath":"static/icon/cart-active.png"
+			},
+			{
+				"text":"我的",
+				"pagePath":"pages/my/my",
+				"iconPath":"static/icon/member.png",
+				"selectedIconPath":"static/icon/member-active.png"
+			}
+		]
+	}
+}
+
